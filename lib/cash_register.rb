@@ -38,7 +38,7 @@ class CashRegister
 
   def items
     #binding.pry
-    @items[item]
+    @items
   end
 
   # subtracts the last transaction from the total
