@@ -24,7 +24,7 @@ class CashRegister
     @total += @transaction_amount
     @transactions << [item, quantity, @transaction_amount]
 
-    while quantity > 1
+    while quantity > 1 do
       @items << item
     end
   end
