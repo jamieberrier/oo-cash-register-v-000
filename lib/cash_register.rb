@@ -1,7 +1,7 @@
 require 'pry'
 
 class CashRegister
-  attr_accessor :total
+  attr_accessor :total, :transaction_amount
 
     def initialize(employee_discount=0)
 
@@ -42,7 +42,7 @@ class CashRegister
 
   # subtracts the last transaction from the total
   def void_last_transaction
-    @total = @total - 
+    @total = @total - self.add_item
   end
 
 end
